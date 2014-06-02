@@ -25,7 +25,7 @@ N	=	number of fins
 
 <h3>Nose Cone Terms</h3>
 
-(CN)N = 2 
+(CN)N = 2 <\n>
 For Cone: XN = 0.666LN 
 For Ogive: XN = 0.466LN
 
