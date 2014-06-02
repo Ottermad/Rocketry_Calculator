@@ -25,8 +25,10 @@ N	=	number of fins
 
 <h3>Nose Cone Terms</h3>
 
-(CN)N = 2 <\n>
+(CN)N = 2 
+
 For Cone: XN = 0.666LN 
+
 For Ogive: XN = 0.466LN
 
 <h3>Conical Transition Terms</h3>
