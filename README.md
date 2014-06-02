@@ -9,18 +9,31 @@ To calculate the CoP I am using the Barrowmen Equations which are detailed here 
 <img src="http://my.execpc.com/~culp/rockets/coniceqn.gif">
 
 LN	=	length of nose
+
 d	=	diameter at base of nose
+
 dF	=	diameter at front of transition
+
 dR	=	diameter at rear of transition
+
 LT	=	length of transition
+
 XP	=	distance from tip of nose to front of transition
+
 CR	=	fin root chord
+
 CT	=	fin tip chord
+
 S	=	fin semispan
+
 LF	=	length of fin mid-chord line
+
 R	=	radius of body at aft end
+
 XR	=	distance between fin root leading edge and fin tip leading edge parallel to body
+
 XB	=	distance from nose tip to fin root chord leading edge
+
 N	=	number of fins
 
 <h3>Nose Cone Terms</h3>
