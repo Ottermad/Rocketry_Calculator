@@ -60,3 +60,6 @@ Sum up coefficients: (CN)R = (CN)N + (CN)T + (CN)F
 
 <img src="http://my.execpc.com/~culp/rockets/cpeqn.gif">
 
+<h2>Center of Gravity</h2>
+
+To calculate the CoG you use an equation explained here: [link](http://exploration.grc.nasa.gov/education/rocket/rktcg.html)
