@@ -6,7 +6,7 @@ This is a project that aims to create a program calculate the stability of rocke
 
 To calculate the CoP I am using the Barrowmen Equations which are detailed here [link](http://my.execpc.com/~culp/rockets/Barrowman.html) and below:
 
-<img src="http://my.execpc.com/~culp/rockets/coniceqn.gif">
+<img src="http://my.execpc.com/~culp/rockets/Barrowman.gif">
 
 LN	=	length of nose
 
