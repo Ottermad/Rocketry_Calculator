@@ -1,4 +1,4 @@
-public class center_of_pressure  {
+public static class center_of_pressure  {
 	
 	public double calculate (
 			double ln, double d, double df, double dr, double lt, double xp, double cr, 

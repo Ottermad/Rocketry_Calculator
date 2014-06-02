@@ -1,6 +1,6 @@
 import java.lang.Math;
-import center_of_gravity;
-import center_of_pressure;
+import center_of_gravity.java;
+import center_of_pressure.java;
 
 public class rocket {
 

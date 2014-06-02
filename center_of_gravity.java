@@ -1,7 +1,7 @@
-public class center_of_gravity {
+public static class center_of_gravity {
 	
 	public double calculate (
-			 double[] mass; double[] reference) {
+			 double[] mass, double[] reference) {
 
 			double sub_total = 0;
 			double weight = 0;
