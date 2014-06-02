@@ -8,6 +8,8 @@ Center of Pressure
 
 To calculate the CoP I am using the Barrowmen Equations which are detailed here [link](http://my.execpc.com/~culp/rockets/Barrowman.html) and below:
 
+<img src="http://my.execpc.com/~culp/rockets/coniceqn.gif">
+
 LN	=	length of nose
 d	=	diameter at base of nose
 dF	=	diameter at front of transition
@@ -35,11 +37,13 @@ Conical Transition Terms
 
 Fin Terms
 
-
+<img src="http://my.execpc.com/~culp/rockets/fineqn.gif">
 
 Finding the Center of Pressure
 
 Sum up coefficients: (CN)R = (CN)N + (CN)T + (CN)F
 
 Find CP Distance from Nose Tip:
+
+<img src="http://my.execpc.com/~culp/rockets/cpeqn.gif">
 
