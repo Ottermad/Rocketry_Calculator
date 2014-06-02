@@ -1,4 +1,6 @@
 import java.lang.Math;
+import center_of_gravity;
+import center_of_pressure;
 
 public class rocket {
 
@@ -25,102 +27,26 @@ public class rocket {
 
 		// Declare and Assign Variables for CG
 
-		double nose_weight = 0;
+		double nose_mass = 0;
 		double nose_ref = 0;
 
+		double recov_mass = 0;
+		double recov_ref = 0;
 
+		double body_mass = 0;
+		double body_ref = 0;
+
+		double fin_mass = 0;
+		double fin_ref = 0;
+
+		double motor_mass = 0;
+		double motor_ref = 0;
+
+		double[] mass = {nose_mass, recov_mass, body_mass, fin_mass, motor_mass};
+		double[] ref = {nose_ref, recov_ref, body_ref, fin_ref, motor_ref};
+
+		double cop = center_of_pressure.calculate(ln, d, df, dr, lt, xp, cr, ct, s, lf, r, xr, xb, n, nose_type);
+		double cog = center_of_gravity.calculate(mass, ref);
+	}
 	
-
-
-	}
-
-	public double cp (
-		double ln, double d, double df, double dr, double lt, double xp, double cr, 
-		double ct, double s, double lf, double r, double xr, double xb, double n, String nose_type) {
-
-		// Nose Cone
-			double cnn = 2;
-
-			if (nose_type == "Cone") {
-
-				// Cone
-				double xn = 0.666 * ln;
-
-			}
-
-			else {
-
-				// Ogive
-				double xn = 0.466 * ln;
-
-			}
-			
-			
-
-		// Transition
-			double cnt = 2 * (
-				(
-					(dr/d) * (dr/d)
-				) 
-				- 
-				(
-					(df/d) * (df/d)
-				)
-			);
-
-			double xt = xp + (
-				(
-					lt / 3
-				)
-				*
-				(
-					1 + (
-
-							(1- (df/dr)) / (1 - ((df/dr)*(df/dr)))
-
-						)
-				)
-			);
-
-		// Fins
-
-			double cnf = (
-				1 
-				+ 
-				(
-					r / (s + r)
-				)
-				* 
-				(
-					(
-						4 * n * (( s / d ) * ( s / d ))
-					)
-					/ 
-					(
-					1 * Math.sqrt(
-									1 + (
-										(2*lf) / (cr + ct) * ( 2 * lf ) / (cr + ct)
-										)
-									)
-								)
-				)
-			);
-
-			double xf = xb + (
-								(xr/3) * 
-								((cr + (2 * ct)) / (cr + ct))
-								+
-								1/6 * (
-									(cr + ct) - ((cr*ct)/(cr*ct))
-									)
-							);
-
-		// Center of Pressure
-
-			double cnr = cnn + cnt + cnf;
-
-			double x = ((cnn * xn) + (cnt * xt) + (cnf * xf)) / cnr;
-
-			return x;
-	}
 }
